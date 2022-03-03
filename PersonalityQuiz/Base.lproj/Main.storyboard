@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-rl-Uye">
-                                <rect key="frame" x="8" y="431" width="398" height="73.5"/>
+                                <rect key="frame" x="8" y="411.5" width="398" height="73.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Animal Are They?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sew-2p-Ahg">
                                         <rect key="frame" x="0.0" y="0.0" width="398" height="34.5"/>
@@ -25,7 +25,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bl-e8-yHG">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bl-e8-yHG">
                                         <rect key="frame" x="0.0" y="41.5" width="398" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="WqR-Mc-VNO"/>
@@ -37,13 +37,49 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-Xs-tHn">
+                                <rect key="frame" x="20" y="44" width="45" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uf-Hr-e7d">
+                                <rect key="frame" x="340" y="44" width="54" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbG-u6-d18">
+                                <rect key="frame" x="20" y="814" width="45" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwq-GI-tfN">
+                                <rect key="frame" x="340" y="814" width="45" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HVI-rl-Uye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="6uS-bF-k2t"/>
-                            <constraint firstItem="HVI-rl-Uye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMg-K3-bKP"/>
-                            <constraint firstItem="HVI-rl-Uye" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="387" id="kUA-Ua-Zvs"/>
+                            <constraint firstItem="cwD-Xs-tHn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8rd-4c-bti"/>
+                            <constraint firstItem="HVI-rl-Uye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Huc-Nv-l5z"/>
+                            <constraint firstItem="QbG-u6-d18" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ipn-64-66B"/>
+                            <constraint firstItem="4uf-Hr-e7d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KPx-Ma-uzN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qwq-GI-tfN" secondAttribute="trailing" constant="29" id="Kyo-NU-NJc"/>
+                            <constraint firstItem="4uf-Hr-e7d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cwD-Xs-tHn" secondAttribute="trailing" constant="8" symbolic="YES" id="NFT-3h-yKj"/>
+                            <constraint firstItem="Qwq-GI-tfN" firstAttribute="leading" secondItem="4uf-Hr-e7d" secondAttribute="leading" id="Nfy-0q-Jps"/>
+                            <constraint firstItem="HVI-rl-Uye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDh-cY-sfI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HVI-rl-Uye" secondAttribute="trailing" constant="8" id="ZEx-0m-431"/>
+                            <constraint firstItem="Qwq-GI-tfN" firstAttribute="baseline" secondItem="QbG-u6-d18" secondAttribute="baseline" id="bo7-sB-yWt"/>
+                            <constraint firstItem="Qwq-GI-tfN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QbG-u6-d18" secondAttribute="trailing" constant="8" symbolic="YES" id="cUI-gb-ri7"/>
+                            <constraint firstItem="cwD-Xs-tHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eaD-Lg-S5X"/>
+                            <constraint firstItem="HVI-rl-Uye" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qQD-VS-L4d"/>
+                            <constraint firstItem="Qwq-GI-tfN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tT6-mi-QW9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uf-Hr-e7d" secondAttribute="trailing" constant="20" id="uTx-8r-RO8"/>
                         </constraints>
                     </view>
                 </viewController>
