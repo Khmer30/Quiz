@@ -16,32 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Animal Are They?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sew-2p-Ahg">
-                                <rect key="frame" x="41" y="431" width="332" height="34"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bl-e8-yHG">
-                                <rect key="frame" x="80" y="477" width="254" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="WqR-Mc-VNO"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Begin Personality Quiz">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                </buttonConfiguration>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-rl-Uye">
+                                <rect key="frame" x="8" y="431" width="398" height="73.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Animal Are They?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sew-2p-Ahg">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bl-e8-yHG">
+                                        <rect key="frame" x="0.0" y="41.5" width="398" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="WqR-Mc-VNO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Begin Personality Quiz">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9Bl-e8-yHG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="8UJ-aW-Hks"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Bl-e8-yHG" secondAttribute="bottom" constant="353" id="LZw-VX-nwR"/>
-                            <constraint firstItem="sew-2p-Ahg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Urm-kt-Nds"/>
-                            <constraint firstItem="9Bl-e8-yHG" firstAttribute="top" secondItem="sew-2p-Ahg" secondAttribute="bottom" constant="12" id="W4h-fo-Olh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Bl-e8-yHG" secondAttribute="trailing" constant="80" id="q8V-tO-46u"/>
-                            <constraint firstItem="sew-2p-Ahg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tP8-4l-8Sh"/>
+                            <constraint firstItem="HVI-rl-Uye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="6uS-bF-k2t"/>
+                            <constraint firstItem="HVI-rl-Uye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMg-K3-bKP"/>
+                            <constraint firstItem="HVI-rl-Uye" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="387" id="kUA-Ua-Zvs"/>
                         </constraints>
                     </view>
                 </viewController>
