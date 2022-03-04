@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    @IBAction func BeginButton(_ sender: UIButton) {
+    
+    @IBAction func startQuizPressed(_ sender: UIButton) {
     }
     
+    @IBAction func unwindToQuizIntroduction(segue: UIStoryboardSegue) {
+        
+    }
 }
 
